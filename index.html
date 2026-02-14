@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Webaura.design</title>
+
+<style>
+
+/* BODY */
+
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:linear-gradient(135deg,#050505,#0f0f1a,#050505);
+  color:white;
+}
+
+/* NAVBAR */
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  position:sticky;
+  top:0;
+  border-bottom:1px solid #8a2be233;
+}
+
+nav h2{
+  color:#a855ff;
+  letter-spacing:1px;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:14px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#a855ff;
+}
+
+/* HERO */
+
+.hero{
+  text-align:center;
+  padding:110px 20px;
+}
+
+.hero h1{
+  font-size:42px;
+  background:linear-gradient(90deg,#a855ff,#00e0ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+  color:#ccc;
+  margin:20px 0;
+}
+
+/* BUTTON */
+
+.btn{
+  padding:12px 28px;
+  background:linear-gradient(90deg,#a855ff,#00e0ff);
+  border:none;
+  color:white;
+  cursor:pointer;
+  border-radius:30px;
+  font-weight:bold;
+  box-shadow:0 0 20px #a855ff55;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 25px #00e0ff88;
+}
+
+/* SECTIONS */
+
+.section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.section h2{
+  color:#a855ff;
+  margin-bottom:20px;
+}
+
+/* SERVICES */
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:25px;
+  margin-top:30px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  padding:22px;
+  border-radius:15px;
+  backdrop-filter:blur(12px);
+  border:1px solid #a855ff33;
+  box-shadow:0 0 25px #000;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 25px #a855ff66;
+}
+
+/* PORTFOLIO */
+
+.portfolio p{
+  margin:10px 0;
+  color:#ccc;
+}
+
+/* INSTAGRAM */
+
+.insta a{
+  color:#00e0ff;
+  text-decoration:none;
+  font-size:18px;
+}
+
+.insta a:hover{
+  color:#a855ff;
+}
+
+/* CONTACT */
+
+.contact p{
+  margin:8px 0;
+}
+
+/* FOOTER */
+
+footer{
+  background:#000;
+  padding:20px;
+  text-align:center;
+  margin-top:40px;
+  font-size:14px;
+  color:#aaa;
+  border-top:1px solid #a855ff33;
+}
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+.hero h1{
+  font-size:28px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+  <h2>Webaura.design</h2>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+  <h1>We Build Modern Websites</h1>
+  <p>Responsive business websites for brands, creators, and startups.</p>
+  <button class="btn">View My Work</button>
+</section>
+
+<!-- ABOUT -->
+
+<section class="section">
+  <h2>About Webaura</h2>
+  <p>
+    Webaura Design is a creative web studio focused on building modern,
+    responsive, and user-friendly websites that grow your brand online.
+  </p>
+</section>
+
+<!-- SERVICES -->
+
+<section class="section">
+  <h2>My Services</h2>
+
+  <div class="services">
+    <div class="card">Website Design</div>
+    <div class="card">HTML Website Development</div>
+    <div class="card">Responsive Design</div>
+    <div class="card">Portfolio Websites</div>
+    <div class="card">Business Websites</div>
+    <div class="card">Landing Pages</div>
+    <div class="card">Free Hosting Setup</div>
+    <div class="card">Domain Connection</div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="section portfolio">
+  <h2>My Work</h2>
+
+  <p>Audionyx Light & Sounds – Responsive Business Website</p>
+
+  <a href="https://audionyx.in" target="_blank" class="btn">
+    Visit Website
+  </a>
+
+  <p>Recent responsive website project built using HTML & CSS.</p>
+</section>
+
+<!-- RESPONSIVE -->
+
+<section class="section">
+  <h2>Mobile Friendly Design</h2>
+  <p>
+    All websites are fully responsive and optimized for mobile,
+    tablet, and desktop devices.
+  </p>
+</section>
+
+<!-- INSTAGRAM -->
+
+<section class="section insta">
+  <h2>Follow on Instagram</h2>
+  <p>See latest works & updates</p>
+
+  <a href="https://instagram.com/webaura.design" target="_blank">
+    @webaura.design
+  </a>
+</section>
+
+<!-- CONTACT -->
+
+<section class="section contact">
+  <h2>Contact Me</h2>
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+  © 2026 Webaura.design — All Rights Reserved <br>
+  Designed by Webaura.design
+</footer>
+
+</body>
+</html>
